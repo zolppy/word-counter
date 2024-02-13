@@ -2,6 +2,6 @@ const textEl = document.querySelector("textarea");
 const wordsEl = document.querySelector(".words");
 const charactersEl = document.querySelector(".characters");
 
-const clearTextArea = () => textEl.value = textEl.value && "";
+const clearField = (field) => field.value = field.value && "";
 
-window.addEventListener("load", clearTextArea);
+window.addEventListener("load", () => clearField(textEl));
