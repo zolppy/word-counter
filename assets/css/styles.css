@@ -1,42 +1,52 @@
+@charset "UTF-8";
+
+:root {
+  --soft-white: #eee;
+}
+
 html {
   font-size: 16px;
 }
-html body {
+
+body {
   background-color: #000;
-  color: #eee;
+  color: var(--soft-white);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
 }
-html body .container {
+
+.container {
   background-color: #222;
   font-weight: 600;
   margin: 0 auto;
   max-width: 480px;
   min-height: 100svh;
   min-width: 320px;
-  padding: 0.5em;
+  padding: .5em;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: .5em;
+
 }
-html body .container h1 {
+
+h1 {
   font-size: 1.5rem;
   text-align: center;
 }
-html body .container textarea {
-  border-radius: 0.9em;
+
+textarea {
+  border-radius: .9em;
   background-color: #000;
-  color: #eee;
-  padding: 0.5em;
+  color: var(--soft-white);
+  padding: .5em;
 }
-html body .container .info-container {
+
+.info-container {
   background-color: #666;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0.5em;
-  padding: 0.5em;
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-radius: .5em;
+  padding: .5em;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
-/*# sourceMappingURL=styles.css.map */
