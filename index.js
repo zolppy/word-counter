@@ -17,7 +17,7 @@ function countLines(text) {
 }
 
 textInput.addEventListener("input", (event) => {
-  const text = textarea.value;
+  const text = event.target.value;
   charCount.textContent = countCharacters(text);
   wordCount.textContent = countWords(text);
   lineCount.textContent = countLines(text);
